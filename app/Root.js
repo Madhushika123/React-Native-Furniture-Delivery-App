@@ -1,8 +1,9 @@
 import React from 'react';
 
-import FirstScreen from './screens/FirstScreen';
+
+import Home from './screens/Home';
 export default class Root extends React.Component {
   render() {
-    return <FirstScreen />;
+    return <Home />;
   }
 }
