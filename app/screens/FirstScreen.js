@@ -13,8 +13,13 @@ class FirstScreen extends Component {
     super(props);
     this.state = {};
   }
+
+  onPressProfileButton = () => {
+    this.props.navigation.navigate('Signin');
+  };
   render() {
     return (
+      // eslint-disable-next-line react-native/no-inline-styles
       <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
         <View style={{height: 400}}>
           <Image
@@ -23,18 +28,18 @@ class FirstScreen extends Component {
           />
         </View>
         <View>
-          <Text style={styles.HomeTopic}> Best Luxury Furnitures Online Store</Text>
+          <Text style={styles.HomeTopic}>Best Luxury Furnitures</Text>
         </View>
         <View>
           <Text style={styles.Hometext}>
-            .....Luxury furniture from us for a your comfortable life.....
+            ..Luxury furniture from us for a comfortable life..
           </Text>
         </View>
         <View style={{alignItems: 'center', justifyContent: 'center'}}>
           <View style={styles.buttoncontainer}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={this.onPressProfileButton}>
               <View style={styles.button}>
-                <Text style={styles.buttontext}> Get Started </Text>
+                <Text style={styles.buttontext}> Visit Store </Text>
               </View>
             </TouchableOpacity>
           </View>
@@ -45,7 +50,6 @@ class FirstScreen extends Component {
 }
 
 export default FirstScreen;
-
 const styles = StyleSheet.create({
   textcontainer: {
     flex: 1,
@@ -65,7 +69,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     color: 'blue',
-    marginTop: -360,
+    marginTop: -320,
   },
   Hometext: {
     marginTop: -250,
@@ -93,10 +97,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     justifyContent: 'center',
-    fontSize: 18,
+    fontSize: 24,
     letterSpacing: -0.39,
     opacity: 20,
     marginTop: 20,
   },
-
 });

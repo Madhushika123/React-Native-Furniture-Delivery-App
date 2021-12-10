@@ -1,9 +1,7 @@
 import React from 'react';
-
-
-import Home from './screens/Home';
+import Navigator from './navigation';
 export default class Root extends React.Component {
   render() {
-    return <Home />;
+    return <Navigator />;
   }
 }
