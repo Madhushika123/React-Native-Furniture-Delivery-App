@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: '100%',
-    resizeMode: 'contain',
+    resizeMode: 'stretch',
     top: 260,
     marginTop: -90,
     marginRight: 100,
