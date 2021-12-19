@@ -2,8 +2,10 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import {SafeAreaView, View, Text, TextInput, StyleSheet} from 'react-native';
 import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
+import {useNavigation} from '@react-navigation/native';
 
 const Signup = () => {
+  const navigation = useNavigation();
   return (
     <SafeAreaView
       style={{paddingHorizontal: 20, flex: 1, backgroundColor: '#ADD8E6'}}>
@@ -27,7 +29,7 @@ const Signup = () => {
               secureTextEntry
             />
           </View>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('Home')}>
             <View style={styles.btnPrimary}>
               <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 18}}>
                 Sign Up
@@ -44,10 +46,10 @@ const Signup = () => {
             marginBottom: 50,
           }}>
           <Text style={{color: '#808080', fontWeight: 'bold'}}>
-            All ready have account.   
+            All ready have account.
           </Text>
           <TouchableOpacity>
-            <Text style={{color: 'red', fontWeight: 'bold'}}>  Sign in  </Text>
+            <Text style={{color: 'red', fontWeight: 'bold'}}> Sign in </Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -81,4 +83,3 @@ const styles = StyleSheet.create({
     marginTop: 100,
   },
 });
- 

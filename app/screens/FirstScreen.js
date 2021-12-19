@@ -24,7 +24,7 @@ class FirstScreen extends Component {
         <View style={{height: 400}}>
           <Image
             style={styles.image}
-            source={require('../assets/Images/image.png')}
+            source={require('../assets/Images/image.jpg')}
           />
         </View>
         <View>
@@ -59,10 +59,11 @@ const styles = StyleSheet.create({
   },
   image: {
     width: '100%',
-    resizeMode: 'stretch',
-    top: 260,
+    
+    resizeMode: 'contain',
+    top: 200,
     marginTop: -90,
-    marginRight: 100,
+    marginRight: 190,
   },
   HomeTopic: {
     fontSize: 36,
@@ -90,7 +91,7 @@ const styles = StyleSheet.create({
     height: 65,
     borderRadius: 75,
     backgroundColor: '#ed5151',
-    marginTop: 290,
+    marginTop: 270,
   },
   buttontext: {
     color: 'white',

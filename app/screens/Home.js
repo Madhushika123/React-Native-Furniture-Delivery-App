@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text, SafeAreaView} from 'react-native';
+import {View, SafeAreaView} from 'react-native';
 import HeaderTabs from '../components/HeaderTabs';
 import SearchBar from '../components/SearchBar';
 import Categories from '../components/Categories';
