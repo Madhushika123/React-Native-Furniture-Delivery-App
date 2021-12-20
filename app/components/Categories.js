@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, ScrollView } from 'react-native';
+import {View, Text, Image, ScrollView} from 'react-native';
 
 const items = [
   {
@@ -40,11 +40,10 @@ export default function Categories() {
         backgroundColor: '#555357',
         paddingVertical: 10,
         paddingLeft: 20,
-      }}
-    >
+      }}>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         {items.map((item, index) => (
-          <View key={index} style={{ alignItems: 'center', marginRight: 30 }}>
+          <View key={index} style={{alignItems: 'center', marginRight: 30}}>
             <Image
               source={item.image}
               style={{
@@ -53,7 +52,7 @@ export default function Categories() {
                 resizeMode: 'contain',
               }}
             />
-            <Text style={{ fontSize: 18, fontWeight: '900' }}>{item.text}</Text>
+            <Text style={{fontSize: 18, fontWeight: '900'}}>{item.text}</Text>
           </View>
         ))}
       </ScrollView>

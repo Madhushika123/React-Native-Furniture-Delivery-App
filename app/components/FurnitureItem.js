@@ -1,36 +1,55 @@
 import React from 'react';
-import {View, Image, Text} from 'react-native';
+import {View, Text, Image, ScrollView} from 'react-native';
 
-export default function FurnitureItem() {
+const items = [
+  {
+    image: require('../assets/Images/furniture1.jpg'),
+    text: 'Sankalpana Furniture House,  Bingiriya Road - Bowaththa',
+  },
+  {
+    image: require('../assets/Images/FurnitureStore.jpg'),
+    text: 'Raneli Furniture Store, Kuliyapitiya Road - Migahakotuwa',
+  },
+  {
+    image: require('../assets/Images/furniture2.jpg'),
+    text: 'Dilshan Furniture Super Center, Chilaw Road - Negambo',
+  },
+  {
+    image: require('../assets/Images/furniture3.jpg'),
+    text: 'Sadushi Furniture House, Hettipola Road - Wariyapola',
+  },
+  
+];
+
+export default function FurnitureItem () {
   return (
-    <View style={{marginTop: 10, padding: 15, backgroundColor: "black"}}>
-      <FurnitureImage />
-      <FurnitureInfo />
+    <View
+      style={{
+        flexDirection: "row", 
+        marginTop: 10,
+        backgroundColor: '#555357',
+        padding: 15,
+        justifyContent: "space-between",
+        alignItems: "center",
+        backgroundColor: 'white'
+      }}>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        {items.map((item, index) => (
+          <View key={index} >
+            <Image
+              source={item.image}
+              style={{
+                width: "100%",
+                height: 180,
+                marginTop: 10,
+                
+                
+              }}
+            />
+            <Text style={{fontSize: 15, fontWeight: 'bold'}}>{item.text}</Text>
+          </View>
+        ))}
+      </ScrollView>
     </View>
   );
 }
-
-const FurnitureImage = () => (
-  <Image
-    source={require('../assets/Images/furniture1.jpg')}
-    // eslint-disable-next-line react-native/no-inline-styles
-    style={{width: '100%', height: 180}}
-  />
-);
-
-const FurnitureInfo = () => (
-  <View
-    style={{
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      marginTop: 10,
-    
-    }}>
-    <View>
-      <Text style={{fontSize: 15, fontWeight: 'bold'}}>
-        Sankalpana Furniture House, Bingiriya Road - Bowaththa
-      </Text>
-    </View>
-  </View> 
-);
