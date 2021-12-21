@@ -6,6 +6,7 @@ import SearchBar from '../components/SearchBar';
 import Categories from '../components/Categories';
 import FurnitureItem from '../components/FurnitureItem';
 import {ScrollView} from 'react-native-gesture-handler';
+import BottomTabs from '../components/BottomTabs';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Categories />
         <FurnitureItem />
       </ScrollView>
+      <BottomTabs />
     </SafeAreaView>
   );
 }

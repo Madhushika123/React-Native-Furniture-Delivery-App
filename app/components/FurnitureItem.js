@@ -18,32 +18,29 @@ const items = [
     image: require('../assets/Images/furniture3.jpg'),
     text: 'Sadushi Furniture House, Hettipola Road - Wariyapola',
   },
-  
 ];
 
-export default function FurnitureItem () {
+export default function FurnitureItem() {
   return (
     <View
       style={{
-        flexDirection: "row", 
+        flexDirection: 'row',
         marginTop: 10,
         backgroundColor: '#555357',
         padding: 15,
-        justifyContent: "space-between",
-        alignItems: "center",
-        backgroundColor: 'white'
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        backgroundColor: 'white',
       }}>
       <ScrollView showsVerticalScrollIndicator={false}>
         {items.map((item, index) => (
-          <View key={index} >
+          <View key={index}>
             <Image
               source={item.image}
               style={{
-                width: "100%",
+                width: '100%',
                 height: 180,
                 marginTop: 10,
-                
-                
               }}
             />
             <Text style={{fontSize: 15, fontWeight: 'bold'}}>{item.text}</Text>
