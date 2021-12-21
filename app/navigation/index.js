@@ -6,6 +6,7 @@ import FirstScreen from '../screens/FirstScreen';
 import Home from '../screens/Home';
 import Signin from '../screens/Signin';
 import Signup from '../screens/Signup';
+import CategoryScreen from '../screens/CategoryScreen';
 
 const PrimaryNavigator = createStackNavigator();
 class App extends Component {
@@ -14,11 +15,15 @@ class App extends Component {
       <NavigationContainer>
         <PrimaryNavigator.Navigator
           headerMode={{}}
-          initialRouteName="FirstScreen">
+          initialRouteName="CategoryScreen">
           <PrimaryNavigator.Screen name="FirstScreen" component={FirstScreen} />
           <PrimaryNavigator.Screen name="Home" component={Home} />
           <PrimaryNavigator.Screen name="Signin" component={Signin} />
           <PrimaryNavigator.Screen name="Signup" component={Signup} />
+          <PrimaryNavigator.Screen
+            name="CategoryScreen"
+            component={CategoryScreen}
+          />
         </PrimaryNavigator.Navigator>
       </NavigationContainer>
     );
@@ -26,3 +31,8 @@ class App extends Component {
 }
 
 export default App;
+
+
+
+
+

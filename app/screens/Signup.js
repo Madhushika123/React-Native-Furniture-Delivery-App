@@ -1,11 +1,32 @@
 import 'react-native-gesture-handler';
-import React from 'react';
-import {SafeAreaView, View, Text, TextInput, StyleSheet} from 'react-native';
+import React, {useState} from 'react';
+import {
+  SafeAreaView,
+  View,
+  Text,
+  TextInput,
+  Alert,
+  StyleSheet,
+} from 'react-native';
 import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
-import {useNavigation} from '@react-navigation/native';
+import auth from '@react-native-firebase/auth';
 
-const Signup = () => {
-  const navigation = useNavigation();
+const Signup = ({navigation}) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const userSignup = async () => {
+    if (!email || !password) {
+      Alert.alert('please fil all the fields');
+      return;
+    }
+    try {
+      await auth().createUserWithEmailAndPassword(email, password);
+    } catch (err) {
+      Alert.alert('something went wrong please try different password');
+    }
+  };
+
   return (
     <SafeAreaView
       style={{paddingHorizontal: 20, flex: 1, backgroundColor: '#ADD8E6'}}>
@@ -20,16 +41,25 @@ const Signup = () => {
         </View>
         <View style={{marginTop: 40}}>
           <View style={styles.input}>
-            <TextInput placeholder="Email" style={styles.inputcontent} />
+            <TextInput
+              placeholder="Email"
+              value={email}
+              mode="outlined"
+              onChangeText={text => setEmail(text)}
+              style={styles.inputcontent}
+            />
           </View>
           <View style={styles.input}>
             <TextInput
               placeholder="Password"
+              value={password}
+              mode="outlined"
               style={styles.inputcontent}
-              secureTextEntry
+              secureTextEntry={true}
+              onChangeText={text => setPassword(text)}
             />
           </View>
-          <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+          <TouchableOpacity mode="contained" onPress={() => userSignup()}>
             <View style={styles.btnPrimary}>
               <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 18}}>
                 Sign Up
