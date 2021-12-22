@@ -92,6 +92,39 @@ const CatItems = [
       },
     ],
   },
+  {
+    cat: 'Chair items',
+    CatItems: [
+      {
+        id: '1',
+        title: 'Academic task granada low back chair',
+        image: require('../assets/Images/c23.png'),
+        type: 'Armless by global',
+        price: '$4,500.00',
+      },
+      {
+        id: '2',
+        title: 'Standard high back chair',
+        image: require('../assets/Images/c24.jpg'),
+        type: 'For useful to  all of people',
+        price: '$3,500.00',
+      },
+      {
+        id: '3',
+        title: 'Chex medium black chair',
+        image: require('../assets/Images/c25.jpg'),
+        type: 'High quality item',
+        price: '$7,500.00',
+      },
+      {
+        id: '4',
+        title: 'Bell chair magis',
+        image: require('../assets/Images/c26.png'),
+        type: 'This item is a branded chair in the store',
+        price: '$1,250.00',
+      },
+    ],
+  },
 ];
 
 export default CatItems;
