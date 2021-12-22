@@ -110,7 +110,7 @@ const BeautyItems = ({navigation}) => {
                   style.categoryBtn,
                   {
                     backgroundColor:
-                      selectedCategoryIndex == index ? '#e5bfe4' : '#ffff',
+                      selectedCategoryIndex == index ? '#707070' : '#ffff',
                   },
                 ]}>
                 <Image
