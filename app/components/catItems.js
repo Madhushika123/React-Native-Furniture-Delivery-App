@@ -66,6 +66,32 @@ const CatItems = [
       },
     ],
   },
+  {
+    cat: 'Sofa items',
+    CatItems: [
+      {
+        id: '1',
+        title: 'Modern black fabric sofa',
+        image: require('../assets/Images/sofa3.jpg'),
+        type: 'Comfotable and luxury item',
+        price: '$58,500.00',
+      },
+      {
+        id: '2',
+        title: 'Three seater fabric sofa',
+        image: require('../assets/Images/sofa11.jpg'),
+        type: 'Online at best price in Sri Lanka',
+        price: '$42,750.00',
+      },
+      {
+        id: '3',
+        title: 'Wooden sofa set',
+        image: require('../assets/Images/sofa28.jpg'),
+        type: 'Four seater in this set',
+        price: '$14,990.00',
+      },
+    ],
+  },
 ];
 
 export default CatItems;
