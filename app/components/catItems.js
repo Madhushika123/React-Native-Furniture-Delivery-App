@@ -125,6 +125,39 @@ const CatItems = [
       },
     ],
   },
+  {
+    cat: 'Kitchen items',
+    CatItems: [
+      {
+        id: '1',
+        title: 'Table Furniture kitchen item in the kitchen',
+        image: require('../assets/Images/k30.jpg'),
+        type: 'It is made by wooden',
+        price: '$9,750.00',
+      },
+      {
+        id: '2',
+        title: 'Table kitchen furniture',
+        image: require('../assets/Images/k31.jpg'),
+        type: 'This is a cooking range in the kitchen',
+        price: '$11,500.00',
+      },
+      {
+        id: '3',
+        title: 'Kitchen furniture for useful house',
+        image: require('../assets/Images/k32.png'),
+        type: 'It is made by wooden',
+        price: '$14,250.00',
+      },
+      {
+        id: '4',
+        title: 'Given the offer this kitchen item',
+        image: require('../assets/Images/k37.jpg'),
+        type: 'High quality furniture. It is made by stain steel',
+        price: '$12,250.00',
+      },
+    ],
+  },
 ];
 
 export default CatItems;
