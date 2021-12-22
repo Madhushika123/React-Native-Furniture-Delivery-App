@@ -158,6 +158,39 @@ const CatItems = [
       },
     ],
   },
+  {
+    cat: 'Table items',
+    CatItems: [
+      {
+        id: '1',
+        title: 'Table furniture made by wooden.',
+        image: require('../assets/Images/t7.png'),
+        type: 'This set has eight chairs and one table',
+        price: '$15,990.00',
+      },
+      {
+        id: '2',
+        title: 'Wooden center table',
+        image: require('../assets/Images/t31.jpg'),
+        type: 'Size: Medium',
+        price: '$11,250.00',
+      },
+      {
+        id: '3',
+        title: 'Wooden center table new',
+        image: require('../assets/Images/t32.jpg'),
+        type: 'Size: small',
+        price: '$9,990.00',
+      },
+      {
+        id: '4',
+        title: 'Living room center table',
+        image: require('../assets/Images/t33.jpeg'),
+        type: 'Size: Medium',
+        price: '$14,250.00',
+      },
+    ],
+  },
 ];
 
 export default CatItems;
