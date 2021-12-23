@@ -25,6 +25,11 @@ export default function BottomTab() {
         style={{width: 30, height: 30, resizeMode: 'contain'}}
         source={require('../assets/Icons/ordericon.png')}
       />
+      <Image
+        // eslint-disable-next-line react-native/no-inline-styles
+        style={{width: 30, height: 30, resizeMode: 'contain'}}
+        source={require('../assets/Images/nextB.png')}
+      />
     </View>
   );
 }

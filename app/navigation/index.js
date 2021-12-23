@@ -13,9 +13,7 @@ class App extends Component {
   render() {
     return (
       <NavigationContainer>
-        <PrimaryNavigator.Navigator
-          headerMode={{}}
-          initialRouteName="CategoryScreen">
+        <PrimaryNavigator.Navigator headerMode={{}} initialRouteName="Home">
           <PrimaryNavigator.Screen name="FirstScreen" component={FirstScreen} />
           <PrimaryNavigator.Screen name="Home" component={Home} />
           <PrimaryNavigator.Screen name="Signin" component={Signin} />
@@ -31,8 +29,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-
-
