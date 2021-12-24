@@ -61,7 +61,7 @@ const Signin = ({navigation}) => {
               style={styles.inputcontent}
             />
           </View>
-          <TouchableOpacity mode="contained" onPress={() => userSigning()}>
+          <TouchableOpacity onPress={() => navigation.navigate('Home')}>
             <View style={styles.btnPrimary}>
               <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 20}}>
                 Sign In
