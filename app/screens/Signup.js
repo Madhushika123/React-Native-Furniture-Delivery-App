@@ -78,7 +78,7 @@ const Signup = ({navigation}) => {
           <Text style={{color: '#808080', fontWeight: 'bold'}}>
             All ready have account.
           </Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('Signin')}>
             <Text style={{color: 'red', fontWeight: 'bold'}}> Sign in </Text>
           </TouchableOpacity>
         </View>

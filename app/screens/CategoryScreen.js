@@ -73,7 +73,7 @@ const Card = ({cat}) => {
   );
 };
 
-const BeautyItems = ({navigation}) => {
+const FurnitureItems = ({navigation}) => {
   const [selectedCategoryIndex, setSelectedCategoryIndex] = React.useState(0);
 
   const [fliteredCat, setfliteredCat] = React.useState([]);
@@ -175,4 +175,4 @@ const style = StyleSheet.create({
   },
 });
 
-export default BeautyItems;
+export default FurnitureItems;

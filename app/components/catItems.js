@@ -161,13 +161,7 @@ const CatItems = [
   {
     cat: 'Table items',
     CatItems: [
-      {
-        id: '1',
-        title: 'Table furniture made by wooden.',
-        image: require('../assets/Images/t7.png'),
-        type: 'This set has eight chairs and one table',
-        price: '$15,990.00',
-      },
+      
       {
         id: '2',
         title: 'Wooden center table',
