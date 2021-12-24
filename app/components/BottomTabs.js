@@ -28,8 +28,9 @@ export default function BottomTab() {
       <Image
         // eslint-disable-next-line react-native/no-inline-styles
         style={{width: 30, height: 30, resizeMode: 'contain'}}
-        source={require('../assets/Images/nextB.png')}
+        source={require('../assets/Images/nextB.png')} 
       />
     </View>
   );
 }
+
